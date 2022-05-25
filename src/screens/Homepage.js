@@ -7,7 +7,7 @@ import millify from 'millify';
 import MainContainer from '../components/MainContainer';
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery(3);
+  const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
   const coins = data?.data?.coins;
   if (isFetching)
@@ -16,7 +16,6 @@ const Homepage = () => {
         <Loader />
       </Container>
     );
-  console.log(data.data);
   return (
     <MainContainer>
       <h5>Global Crypto Stats</h5>
@@ -81,6 +80,9 @@ const Homepage = () => {
             ))}
           </tbody>
         </Table>
+      </Row>
+      <Row>
+        <h5>Latest Crypto News</h5>
       </Row>
     </MainContainer>
   );
