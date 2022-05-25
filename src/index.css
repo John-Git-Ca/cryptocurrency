@@ -12,15 +12,17 @@
   padding: 0px;
   margin: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 .navbar {
   height: 80px;
   background-color: var(--main-bg-color);
+  border-bottom: 3px solid rgb(71, 42, 42);
 }
 
 main {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 174px);
 }
 
 a {
