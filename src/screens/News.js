@@ -10,10 +10,7 @@ const News = () => {
 
   return (
     <MainContainer>
-      <div>nwe</div>
-      <div>nwe</div>
-      <div>nwe</div>
-      <div>nwe</div>
+      <div>news</div>
     </MainContainer>
   );
 };
